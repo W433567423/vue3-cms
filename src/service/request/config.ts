@@ -3,7 +3,7 @@ const TIME_OUT = 3000
 
 switch (process.env.NODE_ENV) {
   case 'development':
-    BASE_URL = 'https://api.wtututu.top'
+    BASE_URL = 'http://192.168.137.161:8000/cms'
     break
   case 'production':
     BASE_URL = 'http://coderwhy.org/dev'

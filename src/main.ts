@@ -2,16 +2,18 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import router from './router'
-import store from './store'
-
+import store, { setupStore } from './store'
+import './assets/css/index.less'
+import 'normalize.css'
 //全局注册
 import { registerApp } from './global'
-import hyRequest from './service'
 
 const app = createApp(App)
+
 registerApp(app)
-app.use(router).use(store).mount('#app')
-hyRequest.request({
-  url: '/api/sunrun',
-  method: 'GET'
-})
+app.use(router)
+app.use(store)
+
+setupStore()
+
+app.mount('#app')
