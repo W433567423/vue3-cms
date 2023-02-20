@@ -12,7 +12,6 @@ const store = createStore<IRootState>({
 })
 
 export function setupStore() {
-  console.log('flash')
   store.commit('login/loadLocalLogin')
 }
 

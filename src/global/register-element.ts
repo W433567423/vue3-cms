@@ -15,7 +15,14 @@ import {
   ElIcon,
   ElRow,
   ElCheckbox,
-  ElLink
+  ElLink,
+  ElContainer,
+  ElHeader,
+  ElMain,
+  ElSubMenu,
+  ElMenu,
+  ElMenuItem,
+  ElMenuItemGroup
   // ElCheckbox,
   // ElLink
 } from 'element-plus'
@@ -33,7 +40,17 @@ const components = [
   ElIcon,
   ElRow,
   ElCheckbox,
-  ElLink
+  ElLink,
+
+  ElContainer,
+  ElAside,
+  ElMain,
+  ElHeader,
+
+  ElSubMenu,
+  ElMenu,
+  ElMenuItem,
+  ElMenuItemGroup
 ]
 
 //全局注册常用组件
